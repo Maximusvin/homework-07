@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'stroke-gap-icons';
+  src: url('../fonts/stroke-gap-icons/stroke-gap-icons.eot');
+  src: url('../fonts/stroke-gap-icons/stroke-gap-icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.woff2') format('woff2'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.woff') format('woff'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.ttf') format('truetype'),
+    url('../fonts/stroke-gap-icons/stroke-gap-icons.svg#svgFontName') format('svg');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  border: none;
+  display: inline-block;
+}
+
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  bottom: 0px;
+  padding: 0px;
+  word-spacing: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Museo Sans 300', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  color: #22241b;
+}
