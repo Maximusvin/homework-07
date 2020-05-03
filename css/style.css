@@ -69,13 +69,6 @@ textarea {
   display: inline-block;
 }
 
-button:hover,
-button:focus,
-input:hover,
-input:focus {
-  outline: none;
-}
-
 ul,
 li {
   list-style: none;
@@ -107,12 +100,6 @@ body {
   color: #777777;
   line-height: 1.2;
 }
-
-/* 
-font-family: 'Roboto Slab', serif;
-font-family: 'Wisdom Script', serif;
-font-family: 'Droid Serif', serif; 
-*/
 
 .header {
   padding-top: 40px;
@@ -174,6 +161,7 @@ font-family: 'Droid Serif', serif;
   font-family: 'Droid Serif', serif;
   font-size: 16px;
   font-style: italic;
+  color: #777777;
 }
 
 .services__list {
@@ -222,4 +210,92 @@ font-family: 'Droid Serif', serif;
   font-family: 'Roboto Slab', serif;
   letter-spacing: -0.025em;
   line-height: 1.8;
+}
+
+.contact {
+  padding-top: 110px;
+  padding-bottom: 115px;
+  background: #222222 url('../images/map.png') no-repeat right bottom;
+}
+
+.contact__title {
+  color: #fff;
+}
+
+.form__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.form__input-wrap {
+  width: 459px;
+}
+
+.form__input {
+  font-weight: 700;
+  color: #bbbbbb;
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 21px;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  font-weight: 700;
+  color: #bbbbbb;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 459px;
+  padding: 20px;
+  resize: none;
+}
+
+.form__input:required:valid,
+.form__textarea:required:valid {
+  outline-color: #008000;
+}
+
+.form__input:required:invalid,
+.form__textarea:required:invalid {
+  outline-color: #e90303;
+}
+
+.form__input[name='subject'] {
+  outline: none;
+}
+
+.form__btn {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  width: 240px;
+  height: 66px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+  outline: none;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  background-color: rgb(209, 169, 25);
 }
